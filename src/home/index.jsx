@@ -20,7 +20,14 @@ export default function Weather() {
     setInput("");
   }
   return (
-    <div className="wrapper">
+    <div
+      className="wrapper"
+      style={{
+        backgroundImage: `url(
+          "./assets/sam-schooler-E9aetBe2w40-unsplash.jpg"
+        )`,
+      }}
+    >
       <header>
         <img src={logo} alt="logo" />
       </header>
