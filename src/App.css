@@ -4,6 +4,9 @@
 .wrapper{
   min-height: 100vh;
 }
+header{
+  padding: 5px 20px;
+}
 header img{
   height: 50px;
   width: 50px ;
@@ -125,8 +128,14 @@ main{
  /* responsive */
 
  @media screen and (max-width:850px) {
-  .weather-icon{
-    display: none;
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weather-icon img{
+    height: 100px;
+    width: 100px;
   }
   .weather-details{
     grid-column: span 2; 
